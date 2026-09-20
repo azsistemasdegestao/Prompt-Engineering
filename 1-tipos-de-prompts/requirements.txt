@@ -1,0 +1,4 @@
+langchain-core==1.6.3
+langchain-openai==1.6.2
+python-dotenv==1.2.3
+rich==15.0.0
