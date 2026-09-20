@@ -23,7 +23,8 @@ Prompt-Engineering/
     ├── 7-Prompt-chaining.py          # Prompt chaining (output of one step feeds the next)
     ├── 8-Least-to-most.py            # Least-to-Most (subproblems solved in sequence)
     ├── utils.py                      # Pretty printing of prompt, response and tokens
-    └── requirements.txt
+    ├── requirements.txt              # Direct dependencies
+    └── requirements.lock.txt         # Full pinned environment
 ```
 
 ## Techniques covered
@@ -56,6 +57,14 @@ python3 -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 
 pip install -r requirements.txt
+```
+
+`requirements.txt` pins only the four packages the scripts import directly.
+If a script behaves differently from what this README describes, install the
+full pinned environment instead:
+
+```bash
+pip install -r requirements.lock.txt
 ```
 
 Create the `.env` file from the example and fill in your key:
@@ -91,6 +100,9 @@ of a technique is visible next to its benefit.
 - `langchain-core` / `langchain-openai` — model interface and prompt templates
 - `python-dotenv` — loads the API key from `.env`
 - `rich` — colored terminal output
+
+These four pull in `openai`, `pydantic` and `tiktoken`, among others. Those are
+pinned in `requirements.lock.txt`, regenerated with `pip freeze > requirements.lock.txt`.
 
 ## License
 
