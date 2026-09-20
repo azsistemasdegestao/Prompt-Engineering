@@ -90,4 +90,4 @@ of a technique is visible next to its benefit.
 
 ## License
 
-MIT
+Released under the [MIT License](LICENSE).
