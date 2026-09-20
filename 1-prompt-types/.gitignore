@@ -3,3 +3,4 @@ venv/
 .direnv/
 __pycache__/
 *.pyc
+prompt_chaining_result.md

@@ -20,6 +20,8 @@ Prompt-Engineering/
     ├── 4-ToT.py                      # Tree of Thought
     ├── 5-SoT.py                      # Skeleton of Thought
     ├── 6-ReAct.py                    # ReAct (reasoning + acting with tools)
+    ├── 7-Prompt-chaining.py          # Prompt chaining (output of one step feeds the next)
+    ├── 8-Least-to-most.py            # Least-to-Most (subproblems solved in sequence)
     ├── utils.py                      # Pretty printing of prompt, response and tokens
     └── requirements.txt
 ```
@@ -36,6 +38,8 @@ Prompt-Engineering/
 | `4-ToT.py` | Tree of Thought | Generating several branches, evaluating each one, and selecting the best. Also shows why hiding the tree only works on a reasoning model. |
 | `5-SoT.py` | Skeleton of Thought | Stage 1 produces a skeleton, stage 2 expands each point in its own parallel call — where the latency gain of the technique actually comes from. |
 | `6-ReAct.py` | ReAct | Alternating `Thought` / `Action` / `Observation`, first simulated inside the prompt, then for real with a tool the code actually executes. |
+| `7-Prompt-chaining.py` | Prompt chaining | One task split into three calls — spec to JSON schema, schema to Go REST handlers, both to a commit message — each link on a different model, so the token cost of chaining is visible step by step. |
+| `8-Least-to-most.py` | Least-to-Most | Stage 1 decomposes the problem into subproblems ordered by dependency, stage 2 solves them one at a time, each call carrying the answers already produced — the sequential counterpart to the parallel expansion in `5-SoT.py`. |
 
 ## Requirements
 
