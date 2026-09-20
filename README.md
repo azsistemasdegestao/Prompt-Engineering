@@ -10,17 +10,17 @@ so the effect of a technique can be compared directly against a plain prompt.
 ## Repository structure
 
 ```
-prompt-eng/
-└── 1-tipos-de-prompts/          # Prompt types
-    ├── 0-Role-prompting.py      # Role prompting (system persona)
-    ├── 1-zero-shot.py           # Zero-shot prompting
-    ├── 2-one-few-shot.py        # One-shot and few-shot prompting
-    ├── 3-CoT.py                 # Chain of Thought
-    ├── 3.1-CoT-Self-consistency.py  # CoT + self-consistency (majority vote)
-    ├── 4-ToT.py                 # Tree of Thought
-    ├── 5-SoT.py                 # Skeleton of Thought
-    ├── 6-ReAct.py               # ReAct (reasoning + acting with tools)
-    ├── utils.py                 # Pretty printing of prompt, response and tokens
+Prompt-Engineering/
+└── 1-prompt-types/                   # Prompt types
+    ├── 0-Role-prompting.py           # Role prompting (system persona)
+    ├── 1-zero-shot.py                # Zero-shot prompting
+    ├── 2-one-few-shot.py             # One-shot and few-shot prompting
+    ├── 3-CoT.py                      # Chain of Thought
+    ├── 3.1-CoT-Self-consistency.py   # CoT + self-consistency (majority vote)
+    ├── 4-ToT.py                      # Tree of Thought
+    ├── 5-SoT.py                      # Skeleton of Thought
+    ├── 6-ReAct.py                    # ReAct (reasoning + acting with tools)
+    ├── utils.py                      # Pretty printing of prompt, response and tokens
     └── requirements.txt
 ```
 
@@ -46,7 +46,7 @@ prompt-eng/
 
 ```bash
 git clone https://github.com/azsistemasdegestao/Prompt-Engineering.git
-cd Prompt-Engineering/1-tipos-de-prompts
+cd Prompt-Engineering/1-prompt-types
 
 python3 -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
@@ -68,7 +68,7 @@ The `.env` file is ignored by git and must never be committed.
 
 ## Running
 
-Run any script from inside `1-tipos-de-prompts/`:
+Run any script from inside `1-prompt-types/`:
 
 ```bash
 python 1-zero-shot.py

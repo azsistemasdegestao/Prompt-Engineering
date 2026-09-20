@@ -1,4 +1,4 @@
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}/1-tipos-de-prompts/venv/bin/python",
+  "python.defaultInterpreterPath": "${workspaceFolder}/1-prompt-types/venv/bin/python",
   "python.terminal.activateEnvironment": true
 }

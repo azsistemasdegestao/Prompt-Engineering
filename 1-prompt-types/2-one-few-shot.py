@@ -81,7 +81,7 @@ Output: ERROR
 
 Example 8:
 Input: "Disk usage at 90%"
-Output: ERROR   // ambíguo: poderia ser WARNING  
+Output: ERROR   // ambiguous: could be WARNING  
 
 Example 9:
 Input: "API latency is above threshold"
@@ -97,7 +97,7 @@ Output: WARNING
 
 Example 12:
 Input: "Low disk space: 5% left"
-Output: ERROR   // ambíguo: WARNING ou ERROR?  
+Output: ERROR   // ambiguous: WARNING or ERROR?  
 
 Example 13:
 Input: "Cache warming completed"
@@ -105,7 +105,7 @@ Output: INFO
 
 Example 14:
 Input: "Connection timeout, retrying..."
-Output: WARNING   // ambíguo: poderia ser ERROR  
+Output: WARNING   // ambiguous: could be ERROR  
 
 Example 15:
 Input: "Authentication failed for user admin"
